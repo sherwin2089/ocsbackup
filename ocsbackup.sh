@@ -8,7 +8,12 @@ cd ~
 mkdir baa
 cd baa
 rm -rf *
-wget https://raw.githubusercontent.com/sherwin2089/ocsbackup/master/ocsbackup.zip && tar zxvf ocsbackup.zip
+apt-get install unzip
+wget https://raw.githubusercontent.com/sherwin2089/ocsbackup/master/ocsbackup.zip
+unzip ocsbackup.zip
+wait
+rm .zip*
+wait
 mv asset /home/vps/public_html
 mv view /home/vps/public_html
 echo "Template Translation Succeeded!"
