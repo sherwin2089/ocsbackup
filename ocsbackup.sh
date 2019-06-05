@@ -8,13 +8,8 @@ cd ~
 mkdir baa
 cd baa
 rm -rf *
-apt-get install unzip
-wget https://raw.githubusercontent.com/sherwin2089/ocsbackup/master/ocsbackup.zip
-unzip ocsbackup.zip
-wait
-rm .zip*
-wait
+wget https://www.dropbox.com/s/qj83hf4uf1r0hak/backup.tar.gz && tar zxvf backup.tar.gz
 mv asset /home/vps/public_html
 mv view /home/vps/public_html
 echo "Template Translation Succeeded!"
-echo "Translated By Baa"
+echo "Translated By Sherwin Llaneta"
